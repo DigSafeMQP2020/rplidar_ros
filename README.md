@@ -49,3 +49,17 @@ Notice: the different is serial_baudrate between A1/A2 and A3/S1
 RPLidar frame
 =====================================================================
 RPLidar frame must be broadcasted according to picture shown in rplidar-frame.png
+
+DigSafe MQP Testing Notes
+=====================================================================
+A few commands that came in handy when testing with the RPLiDAR S1
+
+Adding USB permissions:
+
+	sudo chmod 666 /dev/ttyUSB0
+Check USB permissions:
+
+	ls -l /dev |grep ttyUSB
+Run rplidars1 and view in rviz
+
+	roslaunch rplidar_ros view_rplidar_s1.launch
